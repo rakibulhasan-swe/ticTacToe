@@ -12,7 +12,7 @@
 <body>
     
     <!-- start game window -->
-    <div class="start-game">
+    <div class="start-game hide">
         <h1 class="text-light">Select Character</h1>
         <div class="profile">
             <div class="img">
@@ -25,6 +25,29 @@
             </div>
         </div>
         <button class="primary-btn" id="startBtn">Start game</button>
+    </div>
+
+    <!-- game board -->
+    <div class="container">
+        <div class="board x" id="board">
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block " data-cell></div>
+            <div class="block " data-cell></div>
+            <div class="block " data-cell></div>
+            <div class="block " data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+        </div>
+    </div>
+
+    <!-- draw window -->
+    <div class="draw-msg">
+        <div class="draw">
+            <h1 class="text-yellow text-center">Draw</h1>
+        </div>
+        <button class="drawBtn primary-btn">Play Again</button>
     </div>
 
 
