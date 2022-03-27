@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
 
-    <!-- stylesheet -->
+    <!-- link my stylesheet -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+
     <!-- start game window -->
-    <div class="start-game hide">
+    <div class="start-game">
         <h1 class="text-light">Select Character</h1>
         <div class="profile">
             <div class="img">
@@ -24,39 +25,40 @@
                 <img src="./assets/m2.png" class="id" data-id="y2" alt="">
             </div>
         </div>
-        <button class="primary-btn" id="startBtn">Start game</button>
+
+        <button class="primary-btn" id="startBtn">Start Game</button>
     </div>
 
     <!-- game board -->
     <div class="container">
-        <div class="board x" id="board">
+        <div class="board" id="board">
             <div class="block" data-cell></div>
             <div class="block" data-cell></div>
-            <div class="block " data-cell></div>
-            <div class="block " data-cell></div>
-            <div class="block " data-cell></div>
-            <div class="block " data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
             <div class="block" data-cell></div>
             <div class="block" data-cell></div>
             <div class="block" data-cell></div>
         </div>
     </div>
 
-    <!-- draw window -->
+    <!-- Draw Window -->
     <div class="draw-msg">
         <div class="draw">
-            <h1 class="text-yellow text-center">Draw</h1>
+            <h1 class="text-center text-yellow">Draw</h1>
         </div>
-        <button class="drawBtn primary-btn">Play Again</button>
+        <button id="drawBtn" class="primary-btn">Play Again</button>
     </div>
 
-    <!-- winner window -->
+    <!-- winner Window -->
     <div class="winner-msg">
         <h1 class="text-center text-yellow">Winner</h1>
         <div class="winner"></div>
         <button id="restartBtn" class="primary-btn">Restart</button>
     </div>
 
-
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
