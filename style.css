@@ -3,7 +3,7 @@
 :root{
     --text-light: #fff;
     --text-dark: #363636;
-    --text-btn: #816df2;
+    --text-btn: green;
     --text-yellow: #dae26a;
     --text-selected: #34D399;
     --cell-size: 100px;
